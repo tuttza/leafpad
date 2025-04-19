@@ -24,6 +24,37 @@ Features
   * Drag and Drop
   * Printing
 
+Build Instructions for NetBSD
+===============================
+First install needed packages to generate the `./configure` script and Makefile.
+
+```bash
+% pkgin install libtool autoconf automake intltool gettext glib2 pkg-config bash
+```
+
+cd into the leadpad source directory:
+
+Prep the `./configure` script:
+
+```bash
+% autoreconf --install && autoupdate
+
+```
+
+run the configure script:
+```bash
+% bash ./configure
+```
+
+then build it!
+```bash
+% make
+```
+
+when you're ready to install simply run
+```bash
+% make install
+```
 
 Installation
 ============

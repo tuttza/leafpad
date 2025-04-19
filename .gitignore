@@ -47,3 +47,58 @@ m4/lt~obsolete.m4
 # can automatically generate from config.status script
 # (which is called by configure script))
 Makefile
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+*.app
+
+# Build directories
+/build/
+bin/
+obj/
+
+# Dependency directories
+/lib/
+include/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE specific files
+# Visual Studio
+.vscode/
+*.sln
+*.vcxproj
+*.user
+
+# Code::Blocks
+*.cbp
+*.layout
+
+# Eclipse
+.settings/
+*.project
+*.cproject
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Other
+*.swp
+*.swo
+*.DS_Store
+
