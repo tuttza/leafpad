@@ -56,7 +56,7 @@ get_lines (GtkTextView  *text_view,
 	GtkTextIter iter;
 	gint count;
 	gint size;
-		gint last_line_num;
+	gint last_line_num;
 	
 	g_array_set_size (buffer_coords, 0);
 	g_array_set_size (numbers, 0);

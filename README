@@ -25,9 +25,9 @@ Features
   * Printing
 
 Build Instructions for NetBSD
-===============================
-First install needed packages to generate the ./configure script and Makefile.
+=============================
 
+First install needed packages to generate the ./configure script and Makefile.
 % pkgin install libtool autoconf automake intltool gettext glib2 pkg-config bash
 
 cd into the leadpad source directory and prep the ./configure script:
@@ -43,8 +43,26 @@ when you're ready to install simply run
 % make install
 
 
-Installation
-============
+Build instructions for macOS
+============================
+
+First install build dependencies via brew
+% brew install automake pkgconf intltool gtk+
+
+cd into the leadpad source directory and prep the ./configure script:
+% autoreconf --install && autoupdate
+
+run the configure script:
+% ./configure
+
+then build it!
+% make
+
+when you're ready to install simply run
+% make install
+
+Installation from released source
+=================================
 
 Leafpad requires GTK+-2.x.x libraries.
 Printing feature requires libgnomeprintui-2.2 optionally.
