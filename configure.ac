@@ -1,4 +1,4 @@
-AC_INIT([leafpad],[0.8.19],[tarot@sdf.org])
+AC_INIT([leafpad],[0.8.20b],[tuttza@gmx.com])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS(config.h)
 
